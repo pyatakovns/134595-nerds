@@ -1,0 +1,21 @@
+body {
+	font-size: 16pt;
+	line-height: 24pt;
+	color: #333333;
+	font-family: Roboto, Arial, Helvetica, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 55pt;
+	line-height: 55pt;
+	color: #000000;
+	font-family: Roboto, Arial, Helvetica, Verdana, sans-serif;
+}
+
+h2 {
+	font-size: 24pt;
+	line-height: 30pt;
+	color: #000000;
+	font-weight: bold;
+	font-family: Roboto, Arial, Helvetica, Verdana, sans-serif;
+}
