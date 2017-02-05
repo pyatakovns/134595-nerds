@@ -3,6 +3,7 @@ body {
 	line-height: 24px;
 	color: #283136;
 	font-family: "Roboto", "Arial", sans-serif;
+    margin: 0;
 }
 
 .title-slide {
@@ -37,34 +38,168 @@ body {
 	color: #000000;
 }
 
-/* Сетка шаблона */
+/* Сетка */
 .main-header {
-	width: 1440px;
-	height: 550px;
+	width: 100%;
+	height: 545px;
+	background-color: #eee;
 }
-
-.slide2, .slide3 {
-	display: none;
+.main-container {
+	width: 1160px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px
 }
-
-.container {
-	width: 1165px;
-	height: 95px;
-}
-
 .main-navigation {
 	width: 960px;
-	height: 95px;
-	
+	display: inline-block;
+}
+.index-logo {
+	width: 160px;
+	display: inline-block;
+	margin-top: 50px;
+}
+.navigation {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 200px;
+	margin-top: 80px;
+}
+.navigation li {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 47px;
 	
 }
 .block-basket {
 	width: 160px;
-	height: 95px;
 	float: right;
+	margin-top: 80px;
+}
+.slide2, .slide3 {
+	display: none;
+}
+.container-slide {
+	width: 1160px;
+	display: flex;
+	margin: 0 auto;
+}
+.slide1 {
+	padding-top: 30px; 
+}
+.picture-slide {
+	padding-top: 8px;
 }
 
-.navigation {
-	display: inline;
-	float: left;
+}
+.container {
+	width: 100%;
+	min-height: 1715px;
+}
+.advantages {
+	width: 1160px;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 80px
+}
+.advantages1 {
+	padding-right: 100px;
+}
+.advantages2 {
+	padding-right: 100px;
+}
+.studio {
+	display: flex;
+	width: 1160px;
+	margin: 0 auto;
+}
+.colomn1 {
+	padding-top: 155px;
+	width: 630px
+}
+.colomn2 {
+	padding-top: 135px;
+}
+.items-studio li {
+	padding-top: 37px
+}
+.table {
+	display: flex;
+	width: 360px;
+}
+.level {
+	width: 100px;
+	padding-right: 25px;
+}
+.terms {
+	width: 100px;
+	padding-right: 25px;
+}
+.prepayment {
+	width: 100px;
+}
+.index {
+ 	font-size: 45px;
+	font-weight:bold;
+	color: #000;
+}
+.title-logo-studio {
+	padding-bottom: 25px
+}
+.container-logo {
+	display: flex;
+	width: 1160px;
+	margin: 0 auto;
+	margin-top: 120px;
+	align-items: center;
+}
+.container-logo img:nth-child(1) {
+	width: 200px;
+	margin-right: 100px;
+	
+}
+.container-logo img:nth-child(2) {
+	width: 210px;
+	margin-right: 100px;
+}
+.container-logo img:nth-child(3) {
+	width: 185px;
+	margin-right: 100px;
+}
+.container-logo img:nth-child(4) {
+	width: 175px;
+	margin-right: 100px;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+}
+.main-footer {
+	width: 100%;
+}
+/* Не разобрался */
+.footer {
+	width: 1160px;
+	display: flex;
+	margin: 0 auto;
+}
+.footer-social {
+	display: flex;
+	width: 300px;
+	align-items: center;
+	
+}
+.title-footer {
+	width: 600px;
+	margin-left: 145px;
+	
+}
+.map {
+	width: 100%;
+}
+.address {
+	position: absolute;
+	margin-left: 400px;
+	
 }
