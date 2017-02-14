@@ -23,7 +23,7 @@
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
-						<li>
+						<li class="active-page">
 							<a>Магазин</a>
 						</li>
 						<li>
@@ -57,7 +57,7 @@
         						</div>
 								<div class="price-controls">
 									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          							<label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
         						</div>
       						</div>	
 						</fieldset>
@@ -68,7 +68,7 @@
 							<input type="radio" id="adaptive" name="grid" class="adaptive" checked>
 							<label for="adaptive">
 							Адаптивная	
-							</label><br>
+							</label><br>	
 							<input type="radio" id="fixed" name="grid" class="fixed">
 							<label for="fixed">
 							Фиксированная	
@@ -82,28 +82,28 @@
 							<legend class="title-features">
 							Особенности:	
 							</legend>
-							<input type="checkbox" id="slider" name="features1" checked>
+							<input type="checkbox" id="slider" name="features1" class="features1" checked>
 							<label for="slider">
 							Слайдер	
 							</label><br>
-							<input type="checkbox" id="benefits-unit" name="features2">
+							<input type="checkbox" id="benefits-unit" name="features2" class="features2">
 							<label for="benefits-unit">
 							Блок преимуществ	
 							</label><br>
-							<input type="checkbox" id="news" name="features3" checked>
+							<input type="checkbox" id="news" name="features3" class="features3" checked>
 							<label for="news">
 							Новости	
 							</label><br>
-							<input type="checkbox" id="gallery" name="features4">
+							<input type="checkbox" id="gallery" name="features4" class="features4">
 							<label for="gallery">
 							Галерея	
 							</label><br>
-							<input type="checkbox" id="basket" name="features5">
+							<input type="checkbox" id="basket" name="features5" class="features5">
 							<label for="basket">
 							Корзина	
 							</label>
 						</fieldset>
-						<button type="submit" class="">
+						<button type="submit" class="btn-features">
 						Показать	
 						</button>		
 					</form>	
@@ -114,24 +114,26 @@
 						Сортировать:	
 						</span>
 						<ul class="item-sorting">
-							<li>
+							<li class="item-price">
 							По цене
 							</li>
-							<li>
+							<li class="item-type">
 							По типу
 							</li>
-							<li>
+							<li class="item-name">
 							По названию
 							</li>
 						</ul>
-						<span class="sort"></span>
+						<span class="sort  active"></span>
 						<span class="sort-up"></span>
 					</div>
 				<section class="template-item template">
 					<div class="template-sedona">
-						<span class="browser"></span>
-						<span></span>
-						<span></span>
+                        <div class="browser-wrapper">
+                            <span class="browser"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
             			<img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон Sedona">       
               			<div class="block-template">
 							<h2 class="title-template">
@@ -148,9 +150,11 @@
 						</div>
 					</div>
 					<div class="template-pink-app">
-						<span class="browser"></span>
-						<span></span>
-						<span></span>
+						<div class="browser-wrapper">
+                            <span class="browser"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
             			<img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон Pink App">       
               			<div class="block-template">
 							<h2 class="title-template">
@@ -167,9 +171,11 @@
 						</div>
 					</div>
 					<div class="template-barbershop">
-						<span class="browser"></span>
-						<span></span>
-						<span></span>
+						<div class="browser-wrapper">
+                            <span class="browser"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
             			<img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон Barbershop">       
               			<div class="block-template">
 							<h2 class="title-template">
@@ -186,9 +192,11 @@
 						</div>
 					</div>
 					<div class="template-mishka">
-						<span class="browser"></span>
-						<span></span>
-						<span></span>
+						<div class="browser-wrapper">
+                            <span class="browser"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
             			<img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон MISHKA">       
               			<div class="block-template">
 							<h2 class="title-template">
@@ -205,9 +213,11 @@
 						</div>
 					</div>
 					<div class="template-a-plus">
-						<span class="browser"></span>
-						<span></span>
-						<span></span>
+						<div class="browser-wrapper">
+                            <span class="browser"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
             			<img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон A Plus">       
               			<div class="block-template">
 							<h2 class="title-template">
@@ -224,9 +234,11 @@
 						</div>
 					</div>
 					<div class="template-kwast">
-						<span class="browser"></span>
-						<span></span>
-						<span></span>
+						<div class="browser-wrapper">
+                            <span class="browser"></span>
+                            <span></span>
+                            <span></span>
+                        </div>
             			<img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон КВАСТ">       
               			<div class="block-template">
 							<h2 class="title-template">
@@ -274,7 +286,7 @@
 				<img src="img/map.jpg" width="1440" height="416" class="map" alt="Карта">
 			</section>
 			<section class="footer">
-			<div class="footer-social">
+			<div class="footer-social-shop">
         		<a class="vkontakte" href="#">
 					<span class="social">
 					Вконтакте
