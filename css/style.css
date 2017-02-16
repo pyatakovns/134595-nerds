@@ -480,11 +480,11 @@ a {
 	color: #000;
 }
 
-.navigation a:hover {
+.navigation a[href]:hover {
 	color: #fb565a;
 }
 
-.navigation a:active {
+.navigation a[href]:active {
 	color: #000;
 	opacity: 0.3;
 }
@@ -510,6 +510,10 @@ a {
 }
 
 .footer-social a {
+	display: inline-block;
+}
+
+.footer-social-shop a {
 	display: inline-block;
 }
 
