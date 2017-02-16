@@ -1624,6 +1624,7 @@ textarea:-ms-input-placeholder  {
 	text-transform: uppercase;
 	border-radius: 3px;
 	border: 0;
+	cursor: pointer;
 }
 
 .btn-to-send {
@@ -1631,6 +1632,15 @@ textarea:-ms-input-placeholder  {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 18px;
+}
+
+.btn-to-send:hover {
+	background-color: #e74246;
+}
+
+.btn-to-send:active {
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d7373b;
 }
 
 .modal-content-title {
@@ -1684,6 +1694,10 @@ textarea:-ms-input-placeholder  {
 
 .modal-content {
 	display: none;
+}
+
+.modal-content-show {
+	display: block;
 }
 
 /*Сложный фильтр в Нёрдс*/
