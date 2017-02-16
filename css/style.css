@@ -344,7 +344,7 @@ img {
 	height: 2px;
 	left: -35px;
 	bottom: 26px;
-	background-color:;
+	background-color: #ff6666;
 }
 
 .table {
@@ -409,26 +409,26 @@ img {
 	background-color: #eee;
 }
 
+.container-logo img {
+	opacity: 0.2;
+}
+
 .container-logo a:nth-child(1) {
 	margin-top: 7px;
 	margin-right: 99px; 
-	opacity: 0.2;
 	padding-left: 30px;
 }
 
 .container-logo a:nth-child(2) {
 	margin-right: 101px;
-	opacity: 0.2;
 }
 
 .container-logo a:nth-child(3) {
 	margin-right: 121px;
-	opacity: 0.2;
 }
 
 .container-logo a:nth-child(4) {
 	margin-top: 7px;
-	opacity: 0.2;
 }
 
 .container-logo a {
@@ -503,7 +503,8 @@ a {
 }
 
 .footer-social {
-	display: flex;
+	/*display: flex;*/
+	display: inline-block;
 	width: 300px;
 	align-items: center;
 	margin-top: 14px;
@@ -576,6 +577,7 @@ a {
 }
 
 .title-footer {
+	display: inline-block;
 	width: 600px;
 	margin-left: 99px;
 }
@@ -743,6 +745,15 @@ a {
 	box-sizing: border-box;
 }
 
+.write-us:hover {
+	background-color: #e74246;
+}
+
+.write-us:active {
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d7373b;
+}
+
 /* Сетка каталога */
 .shop-header {
 	width: 100%;
@@ -771,12 +782,19 @@ a {
 	padding-top: 20px;
 }
 
+.navigation .active-page {
+	position: relative;
+}
+
 .active-page::after {
 	position: absolute;
 	content: "";
 	width: 74px;
 	height: 2px;
-	top: 108px;
+	left: 0px;
+	right: 5px;
+	bottom: 5px;
+	top: 33px;
 	background-color: #fb565a;
 }
 
@@ -1345,7 +1363,29 @@ input[type=checkbox]:disabled + label::before {
 	margin-left: 19px;
     background-image: url(../img/sort-down.png);
 	background-repeat: no-repeat;
-    opacity: .2;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.sorting .sort:hover {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+	margin-left: 19px;
+    background-image: url(../img/sort-down.png);
+	background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.sorting .sort:active {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+	margin-left: 19px;
+    background-image: url(../img/sort-down.png);
+	background-repeat: no-repeat;
+    opacity: 1;
     cursor: pointer;
 }
 
@@ -1356,13 +1396,30 @@ input[type=checkbox]:disabled + label::before {
 	margin-left: 15px;
     background-image: url(../img/sort-up.png);
 	background-repeat: no-repeat;
-    opacity: .2;
+    opacity: 0.2;
     cursor: pointer;
 }
 
-.sorting .sort:hover, 
 .sorting .sort-up:hover {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+	margin-left: 15px;
+    background-image: url(../img/sort-up.png);
+	background-repeat: no-repeat;
     opacity: 0.4;
+    cursor: pointer;
+}
+
+.sorting .sort-up:active {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+	margin-left: 15px;
+    background-image: url(../img/sort-up.png);
+	background-repeat: no-repeat;
+    opacity: 1;
+    cursor: pointer;
 }
 
 .sorting .sort.active,
@@ -1422,7 +1479,29 @@ input[placeholder]:invalid {
 	color: #e74246;
 }
 
-textarea[placeholder] {
+textarea::-webkit-input-placeholder {
+	opacity: 0.5;
+	color: #444;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-top: 14px;
+}
+
+textarea:-moz-placeholder {
+	opacity: 0.5;
+	color: #444;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-top: 14px;
+}
+
+textarea:-ms-input-placeholder  {
 	opacity: 0.5;
 	color: #444;
 	font-size: 16px;
@@ -1601,7 +1680,7 @@ textarea[placeholder] {
 }
 
 .modal-content {
-	display: none;
+	display: non;
 }
 
 /*Сложный фильтр в Нёрдс*/
